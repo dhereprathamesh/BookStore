@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+
 import './Card.css'
 const Card = (booklist) => {
     console.log("abc",booklist)
@@ -7,12 +8,17 @@ const Card = (booklist) => {
     <>
     {
         booklist.booklist.Bookdata.map((books, index) => {
-            console.log(books,"cardData")
+
             return(
                 <>
-                
+                <Link to={ `/book/${books.id}`}  style={
+        {marginLeft: "1rem", display: "grid", width: "10rem", gridTemplateColumns: "auto auto auto auto auto", columnGap: "5rem", rowGap: "3rem" }
+
+
+
+}>
                  
-                <div className="cards">
+                <div className="cards" key={books.id}>
                 <img className="cards__img" src={books.image_url} />
                 <div className="cards__overlay">
                     <div className="card__title"> {books.title}</div>
@@ -24,6 +30,7 @@ const Card = (booklist) => {
                     <button type="" className="card__btn">+</button>
                 </div>
             </div>
+            </Link>
                
            
             </>

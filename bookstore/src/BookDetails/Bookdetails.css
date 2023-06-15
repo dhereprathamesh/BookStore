@@ -1,0 +1,38 @@
+.bookdetail__page{
+    margin-top: 9rem;
+    width: 100%;
+}
+
+.book__boxes{
+    margin-left: 12rem;
+    /* padding: 6rem; */
+    width: 80%;
+    gap: 6rem;
+    display: flex;
+    /* display: grid; */
+    /* width: 100%; */
+    /* grid-template-columns: auto auto auto; */
+
+}
+
+.img__div{
+    width: 22%;
+}
+
+.bookdetail__div{
+    width: 60%;
+}
+
+.book__genres{
+    width: 20%;
+    border: 2px solid beige;
+    height: 193px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.book__quotes{
+    margin-left: 12rem;
+    margin-top: 4rem;
+}
+

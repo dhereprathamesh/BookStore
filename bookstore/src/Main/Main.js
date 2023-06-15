@@ -1,5 +1,6 @@
 import React from "react";
-
+import './Main.css'
+import Card from "../common/Card/Card";
 const Main = () => {
   return (
     <>
@@ -32,11 +33,17 @@ const Main = () => {
                 </button>
               </form>
             </div>
-                    <img src="" alt="" />
-        </div>
-        
         </div>
        
+        
+        </div>
+        <div className="books-set">
+        
+    
+        <h3 style={{ margin: "1rem" }}>Books</h3>
+         <Card/>
+       
+        </div>
       
       </div>
     </>

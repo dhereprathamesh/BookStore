@@ -7,15 +7,15 @@
     overflow: hidden;
     margin: 0.19rem;
     cursor:pointer;
-    min-width:200px;
-    height: 220px;
+    min-width: 175px;
+    height: 259px;
     z-index:0;
     border: 1px solid rgb(99, 99, 99);
 }
 
 .cards__img {
-    max-width: 220px;
-    height: 220px;
+    min-width: 175px;
+    height: 263px;
 }
 
 .card__title {

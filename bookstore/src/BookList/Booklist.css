@@ -1,0 +1,8 @@
+.Book__List{
+    margin-left: 5rem;
+    display: grid;
+    width: 10rem;
+    grid-template-columns: auto auto auto auto auto;
+    column-gap: 5rem;
+    row-gap: 3rem;
+}

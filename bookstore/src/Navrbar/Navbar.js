@@ -1,5 +1,6 @@
 import React from 'react'
 import './Navbar.css'
+import { Link, NavLink } from 'react-router-dom';
 const Navbar = () => {
     // const useName = JSON.parse(localStorage.getItem("user"))
     // const [open, setOpen] = useState(false);
@@ -21,9 +22,9 @@ const Navbar = () => {
         <header className="header">
           <nav className="nav">
             <div className="logo">
-             
+            <NavLink to="/" style={{textDecoration:"none",color:"white"}}>
               <span className="nav-title">BookStore</span>
-             
+              </NavLink>
               {/* <a href="/">
               <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrtZgGANYLx0kNK-Tce5lCtDudgv68L9-I9g&usqp=CAU"

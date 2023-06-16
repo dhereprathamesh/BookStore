@@ -21,30 +21,31 @@ const Cart = (cart) => {
           <>
             <div className="">
               
-              <div className="cart_description">
+              <div className="cart_description mt-5">
                 <img src={items ? items.image_url : " "} alt="" className="cart_img_div" />
-                <h5>{items ? items.title : " "}</h5>
-
-                <h5>{items ? items.price : " "}</h5>
-                <button
-                  className="remove_btn"
+                <h5 className="mt-4">{items ? items.title : " "}</h5>
+                
+                <h5 className="mt-4">{items ? items.price : " "}₹</h5>
+                <span
+                  className="remove_btn mb-1 " 
                   type=""
                   onClick={() => {
                     dispatch(remove_from_cart_action(items));
                   }}
-                >X
+                >x
                   
-                </button>
-                <div className="container">
-                <div className="row">
-                    <Link to="/checkout" className="btn btn-outline-primary mb-5 w-25 mx-auto">Proceed To checkout</Link>
-                </div>
-            </div>
+                </span>
+               
               </div>
             </div>
           </>
         );
       })}
+       <div className="container">
+                <div className="row">
+                    <Link to="/checkout" className="btn btn-outline-primary mb-5 mx-auto w-25 ">Proceed To checkout</Link>
+                </div>
+            </div>
     </>
   );
 };

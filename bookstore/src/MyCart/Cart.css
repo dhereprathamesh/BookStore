@@ -28,8 +28,8 @@
 }
 
 .remove_btn{
-    height: 1.5rem;
-    background-color: #c94646;
+    color: red;
+    
     margin-left: 5rem;
     cursor: pointer;
 

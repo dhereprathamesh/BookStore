@@ -21,18 +21,32 @@
 
 .bookdetail__div{
     width: 60%;
+    color: gray;
 }
 
 .book__genres{
     width: 20%;
     border: 2px solid beige;
-    height: 193px;
+    height: 300px;
     text-align: center;
     border-radius: 8px;
+    color: burlywood;
 }
 
 .book__quotes{
     margin-left: 12rem;
     margin-top: 4rem;
+    color: gray;
+    font-size: 1.1rem;
+}
+
+.add_to_cart_btn{
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 7px;
+    border: none;
+    color: brown;
+    background-color: blanchedalmond;
+    cursor: pointer;
 }
 

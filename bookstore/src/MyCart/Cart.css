@@ -1,0 +1,36 @@
+.car_div{
+    margin-right: 1.5rem;
+    margin-top: 0.3rem;
+    font-size: 15px;
+    color: rosybrown;
+}
+
+.cart_description{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    font-size: 29px;
+    color: gray;
+    height: 15rem;
+    justify-content: center;
+    gap: 5rem;
+    width: 50%;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+
+    /* text-align: center; */
+    margin-left: 23rem;
+    margin-bottom: 3rem;
+
+}
+
+.cart_img_div{
+    height: 14rem;
+
+}
+
+.remove_btn{
+    height: 1.5rem;
+    background-color: #c94646;
+    margin-left: 5rem;
+    cursor: pointer;
+
+}

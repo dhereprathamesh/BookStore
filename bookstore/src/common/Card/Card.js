@@ -27,7 +27,7 @@ const Card = (booklist) => {
                         <span className="card__rating"><i className="fas fa-star" />{books.rating}</span>
                     </div>
                     <div className="card__description">{books ? books.price : " "}₹</div>
-                    <button type="" className="card__btn">+</button>
+                    {/* <button type="" className="card__btn">+</button> */}
                 </div>
             </div>
             </Link>

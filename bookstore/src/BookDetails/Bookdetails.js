@@ -2,13 +2,19 @@ import React from 'react'
 import { Bookdata } from '../Constant/Bookdata'
 import { useParams } from 'react-router-dom'
 import './Bookdetails.css'
+import { add_to_cart_action, add_to_cart_saga, remove_from_cart_action, remove_from_cart_saga } from '../Store/Cart/cart.action'
+import { useDispatch } from 'react-redux';
+import { bindActionCreators } from "redux";
+import { connect } from "react-redux";
 
 
-const Bookdetails = () => {
+
+const Bookdetails = (props) => {
   const { id } = useParams();
+  const dispatch = useDispatch();
 
   const bookDetail = Bookdata.find( book => book.id === parseInt(id));
-  console.log(bookDetail, "ALLBOOKDETAILS")
+  console.log(props, "this props")
   return (
 
     <div className="bookdetail__page">
@@ -21,7 +27,7 @@ const Bookdetails = () => {
           <h3>{bookDetail.authors} </h3> 
           <p>{bookDetail.description}</p>
           <h5>{bookDetail.price}₹</h5>
-          <button type="">Add TO Cart</button>
+          <button type="" className='add_to_cart_btn' onClick={() => {dispatch(add_to_cart_action(bookDetail))}}>Add TO Cart</button>
         </div>
         <div className='book__genres'>
           <h2>Book Details</h2>
@@ -41,4 +47,4 @@ const Bookdetails = () => {
   )
 }
 
-export default Bookdetails
+export default Bookdetails;
